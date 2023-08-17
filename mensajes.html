@@ -1,0 +1,186 @@
+<html>
+    <head> 
+        <title> Mensajeria </title>
+    </head>
+
+    <body>
+
+      <h1> Contactanos, desde nuestros medios </h1>
+      <p> Inserte sus datos </p>
+
+      <form class="form">
+        <p> Nombre </p>
+        <input type="text" class="msgbox">
+        <p> Apellido </p>
+        <input type="text" class="msgbox">
+        <p> Correo Electronico </p>
+        <input type="text" class="msgbox">
+        <p> Ponga su queja </p>
+        <input type="text" class="large">
+        <button class="button" onClick=sendEmail() value="Send Email"> Enviar </button>
+      </form>
+      <nav class="navbar">
+        <a href="main.html"><div class="iconoa"></div></a>
+        <a href="contactos.html"><div class="iconob"></div></a>
+        <a href="galeria.html"><div class="iconoc"></div></a>
+        <a href="mensajes.html"><div class="iconod"></div></a>
+      </nav>
+    </body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Dancing+Script&family=Merriweather:wght@300&family=Montserrat:wght@200;500&family=Oswald:wght@200&family=Shrikhand&display=swap');
+       
+        @keyframes keyframe {
+            0%   {opacity: 0;}
+            25%  {opacity: 1;}
+        }
+
+        h1{
+            text-align: center;
+            animation-name: keyframe;
+            animation-duration: 10s;
+            font-family: 'Oswald';
+            text-shadow: 1px 1px 1px rgb(rgb(150, 150, 150));
+            margin-top: 30px;
+        }
+
+        p{
+            margin-top: -14px;
+            text-align: center;
+            animation-name: keyframe;
+            animation-duration: 10s;
+            font-family: 'Oswald';
+            text-shadow: 1px 1px 1px rgb(rgb(150, 150, 150));
+        }
+       
+       .navbar{
+        margin-top: 27px;
+        display: flex;
+        position: fixed;
+        height: 10%;
+        width: 97%;
+        border-radius: 100px;
+        justify-content: center;
+       }
+
+       .iconoa{
+        background-size: cover;
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+        background-image: url(https://cdn-icons-png.flaticon.com/512/25/25694.png);
+        transition: 1s;
+       }
+
+       .iconoa:hover{
+        margin-top: 8px;
+        width: 65px;
+        height: 65px;
+        transition: 1s;
+       }
+
+       .iconob{
+        background-size: cover;
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+        background-image: url(https://cdn.icon-icons.com/icons2/2248/PNG/512/contacts_icon_138726.png);
+        transition: 1s;
+       }
+
+       .iconob:hover{
+        margin-top: 8px;
+        width: 65px;
+        height: 65px;
+        transition: 1s;
+       }
+
+       .iconoc{
+        background-size: cover;
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+        background-image: url(https://cdn.icon-icons.com/icons2/2348/PNG/512/gallery_icon_143014.png);
+        transition: 1s;
+       }
+
+       .iconoc:hover{
+        margin-top: 8px;
+        width: 65px;
+        height: 65px;
+        transition: 1s;
+       }
+
+       .iconod{
+        background-size: cover;
+        margin-top: 10px;
+        width: 60px;
+        height: 60px;
+        background-image: url(https://cdn.icon-icons.com/icons2/2518/PNG/512/message_dots_icon_151200.png);
+        transition: 1s;
+       }
+
+       .iconod:hover{
+        margin-top: 8px;
+        width: 65px;
+        height: 65px;
+        transition: 1s;
+       }
+
+       .form{
+        display:grid;
+        justify-content: center;
+        margin-top: 10px;
+       }
+
+       .form p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 10px;
+       }
+
+       .msgbox{
+        height: 30px;
+        border-radius: 10px;
+        text-align: center;
+       }
+
+       .large{
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        text-align: center;
+       }
+
+       .button{
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 80px;
+        height: 40px;
+        margin-left: 50px;
+        margin-top: 10px;
+        border-radius: 100px;
+       }
+
+       @media (min-width: 600px) {
+
+        .navbar{
+        margin-left: 10px;
+        }
+
+        .msgbox{
+        width: 300px;
+        }
+  
+        .large{
+          width: 300px;
+        }
+
+        .button{
+          margin-left: 106px;
+        }
+
+       }
+
+    </style>
+
+</html>
